@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Counter from "./components/counter";
 
-function App() {
+
+function App() {// 여기에 코드짜면 안됨 components 에 만들어야해 componets로 나눠서 관리해야함
+
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+    <Counter /> 
+    {/* 태그하나 만든거 그래서 연결 하는거*/}
+    {/* 자동완성으로 import만들어줘야함 */}
+  </>
   );
 }
+
 
 export default App;
